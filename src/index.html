@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Final Project</title>
+  <link rel="stylesheet" href="css/common.css" />
+  <style>
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      width: 1260px;
+      justify-content: space-between;
+      margin: 0 auto;
+    }
+
+    form {
+      width: 400px;
+      color: #fff;
+    }
+
+    .header {
+      background-color: darkgreen;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+
+    .info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <form class="search-form" id="search-form">
+      <input type="text" name="searchQuery" autocomplete="off" placeholder="Search images..." />
+      <button type="submit">Search</button>
+    </form>
+  </div>
+  <!-- Add gallery items to this list -->
+  <div class="gallery"></div>
+  <div id="sentinel"></div>
+  <script src="./index.js"></script>
+</body>
+
+</html>
